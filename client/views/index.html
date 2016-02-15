@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<base href="/">
+
+		<title>TV Maze App</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-resource.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+
+		<script src="js/app.js"></script>
+		<script src="js/show/show.controller.js"></script>
+		<script src="js/show/show.service.js"></script>
+
+		<style type="text/css">
+			.navbar-inverse {
+	    		background-color: #cc0000;
+	    		border-color: #000000;
+			}
+
+			.navbar-inverse .navbar-brand {
+	   			 color: #000000;
+			}
+
+			.navbar-default .navbar-nav > li > a:hover,
+			.navbar-default .navbar-nav > li > a:focus {
+	    		color: #000000;
+			}
+
+			body {
+				background-color: #000000;
+			}
+		</style>
+
+	</head>
+	<body ng-app="app">
+		<div class="container">
+			
+			<nav class="navbar navbar-inverse nav-fixed-top" >
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">TV Maze App</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="/">Home</a></li>
+				</ul>
+			</nav>
+
+			<div ng-view></div>
+		</div>
+
+	</body>
+</html>
